@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.6.4/fabric.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+      <script src="T-shirtdesign.js"></script>
+   </head>
+   <body>
+      <div id="filter">
+         Select filters
+         <ul id="filterList">
+            <li>
+               <input type="checkbox" value="Sepia" class="chk"> Sepia
+            </li>
+            <li>
+               <input type="checkbox" value="Black/White" class="chk"> Black/White
+            </li>
+            <li>
+               <input type="checkbox" value="Brownie" class="chk"> Brownie
+            </li>
+            <li>
+               <input type="checkbox" value="Vintage" class="chk">Vintage
+            </li>
+            <li>
+               <input type="checkbox" value="Kodachrome" class="chk"> Kodachrome
+            </li>
+            <li>
+               <input type="checkbox" value="Technicolor" class="chk"> Technicolor
+            </li>
+            <li>
+               <input type="checkbox" value="Polaroid" class="chk" > Polaroid
+            </li>
+         </ul>
+         <input type="button" value="apply" id="applyFilter">
+      </div>
+      <div id="canvas-container">
+         <canvas id="canvas" width="400" height="400"></canvas>
+      </div>
+      <div id="images">
+         <img draggable="true" src="http://i.imgur.com/8rmMZI3.jpg" width="100" height="100"></img>
+         <img draggable="true" src="http://i.imgur.com/q9aLMza.png" width="100" height="100"></img>
+         <img draggable="true" src="http://i.imgur.com/wMU4SFn.jpg" width="100" height="100"></img>
+      </div>
+      <div id="text-container">
+         <input id="text" type="text" placeholder="add text here">
+         <input type="button" id="textButton" value="add" >
+      </div>
+   </body>
+</html>
